@@ -14,6 +14,11 @@ class Triangle
         raise TriangleError
       end
     end
+    if @sides.include?("-") == true
+      begin
+        raise TriangleError
+      end
+    end
 
     if @side_a == @side_b && @side_a == @side_c
       :equilateral

@@ -5,13 +5,7 @@ class Triangle
     @side_a=side_a
     @side_b=side_b
     @side_c=side_c
-    @sides = [@side_a, @side_b, @side_c]
 
-    # if @sides.include?(0) == true
-    #   begin
-    #     raise TriangleError
-    #   end
-    #
     if @side_a <= 0 || @side_b <= 0 || @side_c <= 0
       begin
         raise TriangleError

@@ -7,14 +7,16 @@ class Triangle
     @side_c=side_c
     @sides = [@side_a, @side_b, @side_c]
 
-    if @sides.include?(0) == true
+    # if @sides.include?(0) == true
+    #   begin
+    #     raise TriangleError
+    #   end
+    #
+    if @side_a <= 0 || @side_b <= 0 || @side_c <= 0 ||
       begin
         raise TriangleError
       end
-    elsif @sides.include?(-1...-1000) == true
-      begin
-        raise TriangleError
-      end
+    end
   end
 
   def kind

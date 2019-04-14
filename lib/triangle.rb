@@ -5,7 +5,7 @@ class Triangle
     @side_a=side_a
     @side_b=side_b
     @side_c=side_c
-    @sides = [@side_a, @side_b, @side_c]
+    @sides = [side_a, side_b, side_c]
   end
 
   def kind
@@ -16,6 +16,7 @@ class Triangle
         puts error.message
       end
     end
+    
     if @side_a == @side_b && @side_a == @side_c
       :equilateral
     elsif @side_a == @side_b || @side_a == @side_c || @side_b == @side_c

@@ -14,7 +14,7 @@ class Triangle
         raise TriangleError
       end
     end
-    if @sides.include?("-") == true
+    if @sides.include?(-1...-1000) == true
       begin
         raise TriangleError
       end

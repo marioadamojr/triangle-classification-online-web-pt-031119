@@ -6,9 +6,7 @@ class Triangle
     @side_b=side_b
     @side_c=side_c
     @sides = [@side_a, @side_b, @side_c]
-  end
 
-  def kind
     if @sides.include?(0) == true
       begin
         raise TriangleError
@@ -17,7 +15,10 @@ class Triangle
       begin
         raise TriangleError
       end
-    elsif @side_a == @side_b && @side_a == @side_c
+  end
+
+  def kind
+    if @side_a == @side_b && @side_a == @side_c
       :equilateral
     elsif @side_a == @side_b || @side_a == @side_c || @side_b == @side_c
       :isosceles

@@ -22,7 +22,7 @@ class Triangle
         end
       end
     end
-
+    
     # if @side_a >= (@side_b + @side_c) || @side_b >= (@side_a + @side_c) || @side_c >= (@side_b + @side_a)
     #   begin
     #     raise TriangleError

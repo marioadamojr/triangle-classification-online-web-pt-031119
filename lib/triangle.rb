@@ -5,8 +5,10 @@ class Triangle
     @side_a=side_a
     @side_b=side_b
     @side_c=side_c
+    @sides=[side_a, side_b, side_c]
 
-    if @side_a <= 0 || @side_b <= 0 || @side_c <= 0
+    @sides.each do |side|
+    if side <= 0
       begin
         raise TriangleError
       end

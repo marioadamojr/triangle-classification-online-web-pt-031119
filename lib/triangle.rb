@@ -14,7 +14,7 @@ class Triangle
         raise TriangleError
       end
     end
-    if @sides.include?("-") == true
+    if @sides.select.negative? == true
       begin
         raise TriangleError
       end

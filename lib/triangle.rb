@@ -12,8 +12,8 @@ class Triangle
     if @sides.include?(0 ) == true
       begin
         raise TriangleError
-      rescue TriangleError => error
-        puts error.message
+      # rescue TriangleError => error
+      #   puts error.message
       end
     end
 

@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind
-    if @sides.include?(0) == true
+    if @side_a.include?(0) == true
       begin
         raise TriangleError
       rescue TriangleError => error

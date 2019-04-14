@@ -13,14 +13,11 @@ class Triangle
       begin
         raise TriangleError
       end
-    end
-    if @sides.include?(-1...-1000) == true
+    elsif @sides.include?(-1...-1000) == true
       begin
         raise TriangleError
       end
-    end
-
-    if @side_a == @side_b && @side_a == @side_c
+    elsif @side_a == @side_b && @side_a == @side_c
       :equilateral
     elsif @side_a == @side_b || @side_a == @side_c || @side_b == @side_c
       :isosceles

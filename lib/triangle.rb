@@ -11,6 +11,12 @@ class Triangle
         raise TriangleError
       end
     end
+
+    if @side_a > (@side_b + @side_c) || @side_c > (@side_a + @side_c) ||@side_c > (@side_b + @side_a)
+      begin
+        raise TriangleError
+      end
+    end
   end
 
   def kind

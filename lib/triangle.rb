@@ -8,9 +8,10 @@ class Triangle
     @sides=[side_a, side_b, side_c]
 
     @sides.each do |side|
-    if side <= 0
-      begin
-        raise TriangleError
+      if side <= 0
+        begin
+          raise TriangleError
+        end
       end
     end
 

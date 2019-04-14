@@ -15,19 +15,11 @@ class Triangle
       end
     end
 
-    @sides.each do |s1, s2, s3|
-      if s1 >= (s2 + s3)
-        begin
-          raise TriangleError
-        end
+    if @side_a >= (@side_b + @side_c) || @side_b >= (@side_a + @side_c) || @side_c >= (@side_b + @side_a)
+      begin
+        raise TriangleError
       end
     end
-    
-    # if @side_a >= (@side_b + @side_c) || @side_b >= (@side_a + @side_c) || @side_c >= (@side_b + @side_a)
-    #   begin
-    #     raise TriangleError
-    #   end
-    # end
   end
 
   def kind

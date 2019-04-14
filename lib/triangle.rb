@@ -12,7 +12,7 @@ class Triangle
     #     raise TriangleError
     #   end
     #
-    if @side_a <= 0 || @side_b <= 0 || @side_c <= 0 ||
+    if @side_a <= 0 || @side_b <= 0 || @side_c <= 0
       begin
         raise TriangleError
       end

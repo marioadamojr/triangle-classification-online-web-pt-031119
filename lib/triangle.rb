@@ -8,6 +8,8 @@ class Triangle
   end
 
   def kind
+    if @side_a == @side_b && @side_a == @side_c
+      :equilateral
   end
 
   class TriangleError < StandardError

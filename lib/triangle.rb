@@ -5,11 +5,11 @@ class Triangle
     @side_a=side_a
     @side_b=side_b
     @side_c=side_c
-    @sides = [side_a, side_b, side_c]
+    @sides = [@side_a, @side_b, @side_c]
   end
 
   def kind
-    if @sides.include?(0) == true
+    if @sides.include?(0 ) == true
       begin
         raise TriangleError
       rescue TriangleError => error
